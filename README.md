@@ -21,17 +21,18 @@ Quicksort is a divide-and-conquer sorting algorithm:
 ### Average case
 We assume that Quicksort splits the array into roughly equal parts.
 
-- Each partition step scans the current subarray once, so it does linear work in the array size ( \(n\) for the full array).
-- After partition, there are two subarrays of about size \(n/2\), then \(n/4\), and so on.
-- On each recursion level, the sizes of all subarrays added up on that level are \(n\).
+- Each partition step scans the current subarray once, so it does linear work in the array size $n$ (for the full array).
+- After partition, there are two subarrays of about size $n/2$, then $n/4$, and so on.
+- On each recursion level, the sizes of all subarrays added up on that level are $n$.
 
 So:
 
-- Work per level \(\approx cn\) for some constant \(c\).
-- Number of levels \(\approx\) how many times we can divide \(n\) by 2 until you reach size 1, which is \(\log_2 n\).
+- Work per level $\approx c n$ for some constant $c$.
+- Number of levels $\approx$ how many times we can divide $n$ by 2 until we reach size 1, which is $\log_2 n$.
 
 Therefore:
-\[
+
+$$
 T_{\text{avg}}(n) \approx (\text{work per level}) \times (\text{levels}) \approx c n \cdot \log n = O(n \log n)
-\]
+$$
 ### Worst case
