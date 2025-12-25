@@ -10,11 +10,8 @@ This repository contains implementations of the Quicksort algorithm:
 ## Quick overview of Quicksort
 Quicksort is a divide-and-conquer sorting algorithm:
 
-  1- Choose a pivot element in the array.
-
-  2- Partition the array into two parts:
-  
-      . elements less than the pivot
-      . elements greater than or equal to the pivot
-
-  3- Recursively apply Quicksort to the left and right parts.
+1. Choose a pivot element in the array.  
+2. Partition the array into two parts:
+   - elements less than the pivot  
+   - elements greater than or equal to the pivot  
+3. Recursively apply quicksort to the left and right parts.
