@@ -32,6 +32,6 @@ So:
 
 Therefore:
 \[
-T_{\text{avg}}(n) \approx (\text{work per level}) \times (\text{levels}) \approx cn \cdot \log n = O(n \log n)
+T_{\text{avg}}(n) \approx (\text{work per level}) \times (\text{levels}) \approx c n \cdot \log n = O(n \log n)
 \]
 ### Worst case
